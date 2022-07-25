@@ -1,0 +1,17 @@
+{
+  "/api": {
+    "target": "https://rickandmortyapi.com",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": true
+  },
+  "/reqres": {
+    "target": "https://reqres.in/api",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": true,
+    "pathRewrite": {
+      "^/reqres": ""
+    }
+  }
+}

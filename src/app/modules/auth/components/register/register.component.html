@@ -1,0 +1,36 @@
+<div class="wrapper">
+  <div class="logo">
+    <img
+      src="https://www.freepnglogos.com/uploads/twitter-logo-png/twitter-bird-symbols-png-logo-0.png"
+      alt="" />
+  </div>
+  <div class="text-center mt-4 name">Twitter</div>
+  <form class="p-3 mt-3" [formGroup]="formulario">
+    <div class="form-field d-flex align-items-center">
+      <span class="far fa-user"></span>
+      <input id="email" type="text" name="email" placeholder="Email" formControlName="email" />
+    </div>
+    <div class="form-field d-flex align-items-center">
+      <span class="fas fa-key"></span>
+      <input
+        id="pwd"
+        type="password"
+        name="password"
+        placeholder="Password"
+        formControlName="password" />
+    </div>
+    <div class="form-field d-flex align-items-center">
+      <span class="fas fa-key"></span>
+      <input
+        id="confirm-password"
+        type="password"
+        name="password"
+        placeholder="Confirm Password"
+        formControlName="confirmPassword" />
+    </div>
+    <button class="btn mt-3" [disabled]="formulario.invalid">Registrar</button>
+  </form>
+  <div class="text-center fs-6">
+    Ya tienes cuenta...? <a [routerLink]="['/auth/login']">Inicia Sesion!</a>
+  </div>
+</div>

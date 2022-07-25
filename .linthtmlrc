@@ -1,0 +1,71 @@
+{
+  "extends": "@linthtml/linthtml-config-recommended",
+  "rules": {
+    "tag-self-close": [
+      false
+    ],
+    "attr-quote-style": [
+      true,
+      "double"
+    ],
+    "title-max-len": [
+      true,
+      60
+    ],
+    "attr-name-style": [
+      false
+    ],
+    "doctype-first": [
+      false
+    ],
+    "indent-style": [
+      false
+    ],
+    "img-req-alt": [
+      false
+    ],
+    "img-req-src": [
+      false
+    ],
+    "line-max-len": [
+      true,
+      250
+    ],
+    "indent-width": [
+      "error",
+      2
+    ],
+    "attr-req-value": [
+      false
+    ],
+    "input-req-label": [
+      false
+    ],
+    "fig-req-figcaption": [
+      false
+    ],
+    "attr-order": [
+      "error",
+      [
+        "class",
+        "id",
+        "type",
+        "*ngIf",
+        "*ngFor",
+        "*ngTemplateOutlet",
+        "*ngSwitchCase",
+        "[id]",
+        "[contentEditable]",
+        "[formControl]",
+        "[formGroup]",
+        "[ngClass]",
+        "[ngStyles]",
+        "[(ngModel)]",
+        "(click)",
+        "(keypress)",
+        "(mouseenter)",
+        "(mousedown)"
+      ]
+    ]
+  }
+}

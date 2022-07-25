@@ -1,0 +1,20 @@
+{
+  "singleQuote": true,
+  "trailingComma": "none",
+  "arrowParens": "avoid",
+  "printWidth": 100,
+  "bracketSpacing": false,
+  "tabWidth": 2,
+  "bracketSameLine": true,
+  "overrides": [
+    {
+      "files": [
+        "**/*.css",
+        "**/*.scss"
+      ],
+      "options": {
+        "singleQuote": false
+      }
+    }
+  ]
+}

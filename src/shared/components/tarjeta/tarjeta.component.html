@@ -1,0 +1,22 @@
+<!-- <div class="card m-2">
+  <img [src]="contenido?.image" class="card-img-top" alt="Contenido" />
+  <div class="card-body">
+    <h5 class="card-title">{{ contenido?.name }}</h5>
+    <p class="card-text clase-personalizada" [dirCambiarFuente]="false" [fuente]="'Courier New'">
+      {{ contenido?.status }}
+    </p>
+    <a [routerLink]="['/characters/' + contenido?.id]" class="btn btn-primary">Mas detalles...</a>
+  </div>
+</div> -->
+
+<mat-card class="example-card" [routerLink]="['/characters/' + contenido?.id]">
+  <mat-card-header>
+    <!-- <div mat-card-avatar class="example-header-image"></div> -->
+    <mat-card-title>{{ contenido?.name }}</mat-card-title>
+    <mat-card-subtitle>{{ contenido?.status }}</mat-card-subtitle>
+  </mat-card-header>
+  <img
+    mat-card-image
+    [src]="contenido?.image"
+    alt="Photo of a Shiba Inu" />
+</mat-card>

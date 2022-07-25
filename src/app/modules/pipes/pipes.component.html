@@ -1,0 +1,76 @@
+<section class="p-3">
+  <div class="card">
+    <div class="card-body">Pipe 'uppercase': {{ upperCaseString | uppercase }}</div>
+    <div class="card-body">Original: {{ upperCaseString }}</div>
+  </div>
+</section>
+
+<section class="p-3">
+  <div class="card">
+    <div class="card-body">Pipe 'lowercase': {{ lowerCaseString | lowercase }}</div>
+    <div class="card-body">Original: {{ lowerCaseString }}</div>
+  </div>
+</section>
+
+<section class="p-3">
+  <div class="card">
+    <div class="card-body">Pipe 'titlecase': {{ titleCaseString | titlecase }}</div>
+    <div class="card-body">Original: {{ titleCaseString }}</div>
+  </div>
+</section>
+
+<section class="p-3">
+  <div class="card">
+    <div class="card-body">Pipe 'slice:3:7' string: {{ sliceString | slice: 3:7 }}</div>
+    <div class="card-body">Original: {{ sliceString }}</div>
+  </div>
+</section>
+
+<section class="p-3">
+  <div class="card">
+    <div class="card-body">Pipe 'slice:3:7' array: {{ sliceArray | slice: 3:7 }}</div>
+    <div class="card-body">Original: {{ sliceArray }}</div>
+  </div>
+</section>
+
+<section class="p-3">
+  <div class="card">
+    <div class="card-body">Pipe 'number': {{ numberValue | number: '2.5-5' }}</div>
+    <div class="card-body">Original: {{ numberValue }}</div>
+  </div>
+</section>
+
+<section class="p-3">
+  <div class="card">
+    <div class="card-body">Pipe 'date': {{ fechaHoy | date: 'dd/M/yyyy' }}</div>
+    <div class="card-body">Original: {{ fechaHoy }}</div>
+  </div>
+</section>
+
+<section class="p-3">
+  <div class="card">
+    <div class="card-body">Pipe 'json': {{ objetoPrueba | json }}</div>
+    <div class="card-body">Original: {{ objetoPrueba }}</div>
+  </div>
+</section>
+
+<section class="p-3">
+  <div class="card">
+    <div class="card-body">Pipe 'pipe-hola-mundo': {{ prueba | pipeHolaMundo:true:true }}</div>
+    <div class="card-body">Original: {{ prueba }}</div>
+  </div>
+</section>
+
+<section class="p-3">
+  <div class="card">
+    <div class="card-body">Pipe 'pipe-otro': {{ numberValue | pipeOtro }}</div>
+    <div class="card-body">Original: {{ numberValue }}</div>
+  </div>
+</section>
+
+<section class="p-3">
+  <div class="card">
+    <div class="card-body">Pipe 'pipe-otro': {{ sliceArray | pipeOtro }}</div>
+    <div class="card-body">Original: {{ sliceArray }}</div>
+  </div>
+</section>

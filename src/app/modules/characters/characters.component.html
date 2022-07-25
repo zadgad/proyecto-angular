@@ -1,0 +1,5 @@
+<div class="row row-cols-1 row-cols-md-3 row-cols-lg-5 g-4">
+  <div class="col" *ngFor="let personaje of personajes; let i = index">
+    <tarjeta [contenido]="personaje" *dirDelay="1000 * i"></tarjeta>
+  </div>
+</div>

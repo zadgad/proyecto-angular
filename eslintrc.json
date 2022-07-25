@@ -1,0 +1,284 @@
+{
+  "root": true,
+  "ignorePatterns": [
+    "projects/**/*",
+    "src/environments/*"
+  ],
+  "overrides": [
+    {
+      "files": [
+        "*.ts"
+      ],
+      "parser": "@typescript-eslint/parser",
+      "parserOptions": {
+        "project": [
+          "tsconfig.json"
+        ],
+        "createDefaultProgram": true
+      },
+      "extends": [
+        "plugin:@angular-eslint/recommended",
+        "plugin:@angular-eslint/template/process-inline-templates",
+        "plugin:ngrx/recommended",
+        "plugin:import/recommended",
+        "plugin:import/errors",
+        "plugin:import/warnings",
+        "plugin:prettier/recommended"
+      ],
+      "rules": {
+        "prettier/prettier": [
+          "error",
+          {
+            "endOfLine": "auto"
+          },
+          {
+            "usePrettierrc": true
+          }
+        ],
+        "max-depth": [
+          "error",
+          {
+            "max": 4
+          }
+        ],
+        "max-len": [
+          "error",
+          {
+            "code": 100,
+            "ignoreComments": true,
+            "ignoreStrings": true,
+            "ignoreTemplateLiterals": true,
+            "ignoreTrailingComments": true,
+            "ignoreUrls": true,
+            "tabWidth": 4
+          }
+        ],
+        "simple-import-sort/imports": "error",
+        "simple-import-sort/exports": "error",
+        "import/no-unresolved": "off",
+        "import/named": "off",
+        "import/order": [
+          "error",
+          {
+            "groups": [
+              "builtin",
+              "external",
+              [
+                "internal",
+                "sibling",
+                "parent"
+              ]
+            ],
+            "newlines-between": "always"
+          }
+        ],
+        "no-underscore-dangle": "off",
+        "ngrx/prefer-inline-action-props": "off",
+        "ngrx/prefer-effect-callback-in-block-statement": "off",
+        "@typescript-eslint/member-ordering": [
+          "error",
+          {
+            "default": {
+              "memberTypes": [
+                "signature",
+                "public-static-field",
+                "protected-static-field",
+                "private-static-field",
+                "public-decorated-field",
+                "protected-decorated-field",
+                "private-decorated-field",
+                "public-instance-field",
+                "protected-instance-field",
+                "private-instance-field",
+                "public-abstract-field",
+                "protected-abstract-field",
+                "private-abstract-field",
+                "public-field",
+                "protected-field",
+                "private-field",
+                "static-field",
+                "instance-field",
+                "abstract-field",
+                "decorated-field",
+                "field",
+                "public-constructor",
+                "protected-constructor",
+                "private-constructor",
+                "constructor",
+                "public-static-method",
+                "protected-static-method",
+                "private-static-method",
+                "public-decorated-method",
+                "protected-decorated-method",
+                "private-decorated-method",
+                "public-instance-method",
+                "protected-instance-method",
+                "private-instance-method",
+                "public-abstract-method",
+                "protected-abstract-method",
+                "private-abstract-method",
+                "public-method",
+                "protected-method",
+                "private-method",
+                "static-method",
+                "instance-method",
+                "abstract-method",
+                "decorated-method",
+                "method"
+              ]
+            }
+          }
+        ],
+        "@typescript-eslint/no-unused-vars": [
+          "error"
+        ],
+        "@typescript-eslint/brace-style": [
+          "error"
+        ],
+        "no-multi-spaces": [
+          "error"
+        ],
+        "key-spacing": [
+          "error"
+        ],
+        "object-curly-spacing": [
+          "error",
+          "never"
+        ],
+        "array-bracket-spacing": [
+          "error",
+          "never"
+        ],
+        "space-in-parens": [
+          "error",
+          "never"
+        ],
+        "space-before-blocks": [
+          "error",
+          "always"
+        ],
+        "@typescript-eslint/no-empty-function": [
+          "error",
+          {
+            "allow": [
+              "constructors"
+            ]
+          }
+        ],
+        "@typescript-eslint/typedef": [
+          "error"
+        ],
+        "@typescript-eslint/semi": [
+          "error",
+          "always"
+        ],
+        "@typescript-eslint/no-extra-semi": [
+          "error"
+        ],
+        "@typescript-eslint/comma-dangle": [
+          "error"
+        ],
+        "@typescript-eslint/explicit-member-accessibility": [
+          "error",
+          {
+            "accessibility": "explicit",
+            "overrides": {
+              "accessors": "explicit",
+              "constructors": "no-public",
+              "methods": "explicit",
+              "properties": "explicit",
+              "parameterProperties": "explicit"
+            }
+          }
+        ],
+        "@typescript-eslint/naming-convention": [
+          "error",
+          {
+            "selector": "default",
+            "format": [
+              "camelCase"
+            ]
+          },
+          {
+            "selector": "variable",
+            "format": [
+              "camelCase",
+              "UPPER_CASE"
+            ],
+            "leadingUnderscore": "allow"
+          },
+          {
+            "selector": "memberLike",
+            "modifiers": [
+              "private"
+            ],
+            "format": [
+              "camelCase",
+              "UPPER_CASE"
+            ],
+            "leadingUnderscore": "require"
+          },
+          {
+            "selector": "typeLike",
+            "format": [
+              "PascalCase"
+            ],
+            "leadingUnderscore": "allow"
+          },
+          {
+            "selector": "enumMember",
+            "format": [
+              "camelCase",
+              "UPPER_CASE"
+            ]
+          }
+        ],
+        "no-console": [
+          "error",
+          {
+            "allow": [
+              "table",
+              "warn",
+              "error"
+            ]
+          }
+        ],
+        "no-inline-comments": [
+          "error"
+        ],
+        "@angular-eslint/pipe-prefix": [
+          "error",
+          {
+            "prefixes": [
+              "pipe"
+            ]
+          }
+        ],
+        "@angular-eslint/directive-selector": [
+          "error",
+          {
+            "prefix": [
+              "dir"
+            ],
+            "style": "camelCase",
+            "type": "attribute"
+          }
+        ]
+      },
+      "plugins": [
+        "ngrx",
+        "simple-import-sort",
+        "prettier"
+      ]
+    },
+    {
+      "files": [
+        "*.html"
+      ],
+      "extends": [
+        "plugin:@angular-eslint/template/recommended"
+      ],
+      "rules": {}
+    }
+  ]
+}
